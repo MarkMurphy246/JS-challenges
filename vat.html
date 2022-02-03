@@ -25,13 +25,14 @@
     <!-- Start of Script -->
     <script>
 
-        // VAT constant: 
-
+        // VAT constant:
+        let userInput = document.getElementById("textbox").value
+        console.log(userInput)
         let outPut = document.getElementById("text-output")
 
         //console.log(userInput)
 
-        let textValue = 50 //this value would be input by user using the input tag.
+        let textValue = userInput //this value would be input by user using the input tag.
         const vat = 14/100
 
         function vatTotal(){
@@ -43,7 +44,8 @@
         //total = vatTotal
 
         //need help here?
-        //document.getElementById("btn").onclick = function(){
+        //document.getEle
+        //mentById("btn").onclick = function(){
             //document.getElementById("text-output") = vatTotal()
         //}
 
