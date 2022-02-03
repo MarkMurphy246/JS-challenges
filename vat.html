@@ -30,16 +30,11 @@
 
         // Get user input and save to variable
         function vatTotal(){
-            let userInput = document.getElementById("textbox").value
-            let outPut = document.getElementById("text-output")
-            let total = vat * userInput
-            outPut.innerText = total
+            let userInput = document.getElementById("textbox").value //created variable for user input
+            let outPut = document.getElementById("text-output")  //created variable for inneHTML <p>
+            let total = vat * userInput //calculated const with userInput using the variables created
+            outPut.innerHTML = total //updated the DOM using the innerHTML variable created
         }
-        // Perform calculation here
-
-
-        // log VAT out to consol, DOM, or alert
-
 
     </script>
     <!-- End of Script -->
