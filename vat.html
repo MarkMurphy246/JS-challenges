@@ -26,37 +26,15 @@
     <script>
 
         // VAT constant:
-        let userInput = document.getElementById("textbox").value
-        console.log(userInput)
-        let outPut = document.getElementById("text-output")
-
-        //console.log(userInput)
-
-        let textValue = userInput //this value would be input by user using the input tag.
         const vat = 14/100
 
-        function vatTotal(){
-            let total = vat * textValue
-            outPut.innerText = total
-            //console.log(total)
-        }
-
-        //total = vatTotal
-
-        //need help here?
-        //document.getEle
-        //mentById("btn").onclick = function(){
-            //document.getElementById("text-output") = vatTotal()
-        //}
-
-        //document.getElementById("textbox").innerHTML = total()
-        
-
-
         // Get user input and save to variable
-    
-
-
+        function vatTotal(){
+            let userInput = document.getElementById("textbox").value
+            let outPut = document.getElementById("text-output")
+            let total = vat * userInput
+            outPut.innerText = total
+        }
         // Perform calculation here
 
 
