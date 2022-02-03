@@ -17,8 +17,9 @@
         </h1>
 
         <div id="app">
-            <input type="text" id="textbox">
-            View the answer in the console
+            <input type="text" id="textbox" placeholder="Please add distance in km">
+            <button type="button" id="btn" onclick="distanceCal()">Calculate</button>
+            <p id="text-output">Total Distance in miles</p>        
         </div>
 
         <!-- Start of Script -->
@@ -26,24 +27,17 @@
 
         // step 1
         // Create const for conversion
-        const km = .62;
-        const miles = 1.60;
-
+        const miles = 1.609344 //created const for miles
 
 
         // step 2
         // Get user input and save to variable
-        let value = document.getElementById("textbox")
-
-        // step 3
-        // Perform calculation and save result
-        let distance = value * km
-
-
-        // step 4
-        // Display result in DOM, alert or console
-        console.log("The distance of " + /*<<input var>>*/ + "km after being converted is " + /*<<result var>>*/ + " in miles");
-
+        function distanceCal(){ //created function for button onlick to convert miles into km
+            let userInput = document.getElementById("textbox").value //created variable for user input
+            let outPut = document.getElementById("text-output") //created variable for innerHTML out put
+            let total = miles / userInput //calculation to convert miles into km
+            outPut.innerHTML = total //DOM output 
+        }
         </script>
         <!-- End of Script -->
 
