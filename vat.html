@@ -18,7 +18,7 @@
 
     <div id="app">
         <input type="text" id="textbox">
-        <button type="button" id="btn">Save</button>
+        <button type="button" id="btn" onclick="vatTotal()">Save</button>
         <p id="text-output">vat amount</p>
     </div>
 
@@ -26,20 +26,28 @@
     <script>
 
         // VAT constant: 
+
+        let outPut = document.getElementById("text-output")
+
+        //console.log(userInput)
+
         let textValue = 50 //this value would be input by user using the input tag.
         const vat = 14/100
 
         function vatTotal(){
             let total = vat * textValue
-            console.log(total)
+            outPut.innerText = total
+            //console.log(total)
         }
+
+        //total = vatTotal
 
         //need help here?
-        document.getElementById("btn").onclick = function(){
-            document.getElementById("text-output") = total()
-        }
+        //document.getElementById("btn").onclick = function(){
+            //document.getElementById("text-output") = vatTotal()
+        //}
 
-        document.getElementById("textbox").innerHTML = vatTotal()
+        //document.getElementById("textbox").innerHTML = total()
         
 
 
