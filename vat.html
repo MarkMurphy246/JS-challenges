@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion Calculator</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <h1 id="title">
+        VAT Calculator
+    </h1>
+
+    <div id="app">
+        <input type="text" id="textbox">
+        <button type="button" id="btn">Save</button>
+        <p id="text-output">vat amount</p>
+    </div>
+
+    <!-- Start of Script -->
+    <script>
+
+        // VAT constant:
+        let textValue = 50
+        const vat = 14/100
+
+        function vatTotal(){
+            let total = vat * textValue
+            console.log(total)
+        }
+
+        document.getElementById("btn").onclick = function(){
+            document.getElementById("text-output") = vatTotal
+        }
+
+
+        //document.getElementById("textbox").innerHTML
+        
+
+
+
+
+
+        // Get user input and save to variable
+        //textValue = document.getElementById("textbox").value;
+        //document.write(textValue);
+       // let btn = document.getElementById("btn");
+       // btn.addEventListener("click", displayMessage);
+       // function displayMessage(){
+        //    document.getElementById("innerhtml").innerHTML = textValue;
+       // }
+
+
+
+        // Perform calculation here
+        //let result = textValue * 0.14;
+
+        // log VAT out to consol, DOM, or alert
+        //console.log(textValue + result);
+
+    </script>
+    <!-- End of Script -->
+
+</body>
+
+</html>

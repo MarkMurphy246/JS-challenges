@@ -1,0 +1,22 @@
+<html>
+    <head>  
+        <title>Append to Elements</title>
+    </head>
+
+    <body>  
+        <p id="aParagraph">Javascript is ... </p>
+        <button id="appendButton">Append text</button>
+        <span id="emptyParagraph"></span>
+        <button id="createHeading">Create text</button>  
+        
+        <script>
+            document.getElementById("appendButton").onclick = function() {
+                document.getElementById("aParagraph").innerHTML = "I think " + document.getElementById("aParagraph").innerHTML + "awesome!";
+            }
+            
+            document.getElementById("createHeading").onclick = function() {
+                document.getElementById("emptyParagraph").innerHTML = "<h3>Hi there!</h3>";
+            }
+         </script>
+    </body>
+</html>
